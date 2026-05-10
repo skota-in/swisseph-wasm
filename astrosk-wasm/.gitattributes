@@ -1,0 +1,11 @@
+# Shell scripts must use LF line endings even on Windows checkouts —
+# Git Bash / WSL bash fails on CR characters with errors like
+#   "$'\r': command not found" and "invalid option name ... pipefail"
+*.sh text eol=lf
+
+# Same for any shell-like helper
+*.bash text eol=lf
+
+# WASM and ephemeris files are binary — never CRLF-translate
+*.wasm binary
+*.se1 binary
