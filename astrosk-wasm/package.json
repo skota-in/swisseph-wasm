@@ -1,0 +1,58 @@
+{
+  "name": "astrosk-wasm",
+  "version": "0.1.0",
+  "description": "Swiss Ephemeris compiled to WebAssembly. Lightweight, TypeScript-first astronomical/astrological calculations for browser, Node, and Angular apps.",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./wasm/astrosk.wasm": "./wasm/astrosk.wasm",
+    "./wasm/astrosk.js": "./wasm/astrosk.js",
+    "./ephe/*": "./deps/ephe/*",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist/",
+    "wasm/",
+    "deps/ephe/",
+    "src/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build:wasm": "bash scripts/build.sh",
+    "build:ts": "tsc",
+    "build": "npm run build:wasm && npm run build:ts",
+    "test": "node tests/verify.mjs",
+    "clean": "rm -rf dist wasm/astrosk.js wasm/astrosk.wasm"
+  },
+  "keywords": [
+    "swiss-ephemeris",
+    "astrology",
+    "astronomy",
+    "ephemeris",
+    "wasm",
+    "webassembly",
+    "vedic",
+    "sidereal",
+    "ayanamsa",
+    "true-pushya",
+    "lahiri",
+    "houses",
+    "planetary-positions",
+    "angular",
+    "typescript"
+  ],
+  "license": "AGPL-3.0-or-later",
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}

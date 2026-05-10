@@ -1,0 +1,120 @@
+{
+  "_comment": "Reference values captured from native swetest (Swiss Ephemeris 2.10.03) compiled from /home/user/swisseph C source. Used as authoritative ground truth in tests/verify.mjs. Tolerances: tropical longitudes 1e-6 deg (3.6 milliarcsec), sidereal 1e-5 deg, JHora display 1 arcmin (0.0167 deg).",
+  "_swisseph_version": "2.10.03",
+  "_planets_order": ["SUN", "MOON", "MERCURY", "VENUS", "MARS", "JUPITER", "SATURN", "URANUS", "NEPTUNE", "PLUTO"],
+
+  "tropical_2024_05_15_12_00_UT": {
+    "_label": "Tropical, May 15 2024 12:00 UT",
+    "year": 2024, "month": 5, "day": 15, "hour": 12.0,
+    "jd_ut": 2460446.0,
+    "delta_t_sec": 69.064444,
+    "longitudes": {
+      "SUN": 55.1447878, "MOON": 145.2368159, "MERCURY": 29.7377957,
+      "VENUS": 49.7261545, "MARS": 11.3926899, "JUPITER": 57.5322195,
+      "SATURN": 347.7817780, "URANUS": 53.2264474, "NEPTUNE": 359.3252862,
+      "PLUTO": 302.0660745
+    },
+    "latitudes": {
+      "SUN": 0.0000724, "MOON": 3.9594262, "MERCURY": -3.1561177,
+      "VENUS": -0.8128076, "MARS": -1.2394472, "JUPITER": -0.7354879,
+      "SATURN": -1.7947831, "URANUS": -0.2634274, "NEPTUNE": -1.2416289,
+      "PLUTO": -3.0695971
+    },
+    "distances_au": {
+      "SUN": 1.010960042, "MOON": 0.002683560, "MERCURY": 0.919617202,
+      "VENUS": 1.723175626, "MARS": 1.921913871, "JUPITER": 6.024801620,
+      "SATURN": 10.042813983, "URANUS": 20.601926185, "NEPTUNE": 30.456385369,
+      "PLUTO": 34.606186327
+    }
+  },
+
+  "tropical_2025_05_10_02_02_26_UT": {
+    "_label": "Tropical, May 10 2025 02:02:26 UT (Warangal local 7:32:26 IST)",
+    "year": 2025, "month": 5, "day": 10, "hour": 2.040555556,
+    "longitudes": {
+      "SUN": 49.6801130, "MOON": 201.1791527, "MERCURY": 29.2874512,
+      "VENUS": 6.0613076, "MARS": 129.8819316, "JUPITER": 83.2331511,
+      "SATURN": 358.7302231, "URANUS": 56.8382502, "NEPTUNE": 1.3616827,
+      "PLUTO": 303.8116732
+    }
+  },
+
+  "tropical_2026_05_10_11_32_26_UT": {
+    "_label": "Tropical, May 10 2026 11:32:26 UT",
+    "year": 2026, "month": 5, "day": 10, "hour": 11.540555556,
+    "jd_ut": 2461170.980856481,
+    "delta_t_sec": 68.858169,
+    "longitudes": {
+      "SUN": 49.8272824, "MOON": 326.7627273, "MERCURY": 44.9293548,
+      "VENUS": 79.7294363, "MARS": 23.6067549, "JUPITER": 110.3222712,
+      "SATURN": 10.1838836, "URANUS": 60.8114905, "NEPTUNE": 3.5441559,
+      "PLUTO": 305.5060528
+    }
+  },
+
+  "true_pushya_2020_04_21_12_32_26_UT": {
+    "_label": "Sidereal True Pushya (PVRN Rao), Apr 21 2020 12:32:26 UT (Des Moines)",
+    "year": 2020, "month": 4, "day": 21, "hour": 12.540555556,
+    "ayanamsa_deg": 23.0015722,
+    "_jhora_ayanamsa_display": "23-00-21.13 (JHora differs ~15\" from swetest at this date)",
+    "longitudes": {
+      "SUN": 8.8608984, "MOON": 351.5912588, "MERCURY": 354.7466708,
+      "VENUS": 51.0054884, "MARS": 292.0758700, "JUPITER": 273.4127839,
+      "SATURN": 278.6430180, "URANUS": 13.3116821, "NEPTUNE": 326.9478376,
+      "PLUTO": 271.9862119
+    },
+    "jhora_longitudes_dms": {
+      "_comment": "JHora display values, expected to match within ~30 arcsec",
+      "SUN":     "8 Ar 52' 02.58\"",
+      "MOON":   "21 Pi 35' 33.13\"",
+      "MARS":   "22 Cp 04' 54.80\"",
+      "MERCURY":"24 Pi 45' 40.05\"",
+      "JUPITER": "3 Cp 24' 56.20\"",
+      "VENUS":  "21 Ta 00' 29.34\"",
+      "SATURN":  "8 Cp 38' 44.28\""
+    }
+  },
+
+  "true_pushya_2025_05_10_02_02_26_UT": {
+    "_label": "Sidereal True Pushya, May 10 2025 02:02:26 UT (Warangal IST 7:32:26)",
+    "year": 2025, "month": 5, "day": 10, "hour": 2.040555556,
+    "ayanamsa_deg_jhora": 23.0765,
+    "longitudes": {
+      "SUN": 26.6045206, "MOON": 178.1035603, "MERCURY": 6.2118588,
+      "VENUS": 342.9857152, "MARS": 106.8063392, "JUPITER": 60.1575587,
+      "SATURN": 335.6546307, "URANUS": 33.7626578, "NEPTUNE": 338.2860903,
+      "PLUTO": 280.7360808
+    },
+    "jhora_longitudes_dms": {
+      "SUN":    "26 Ar 36' 33.51\"",
+      "MOON":   "28 Vi 06' 15.22\"",
+      "MARS":   "16 Cn 48' 34.72\"",
+      "MERCURY": "6 Ar 13' 19.20\"",
+      "JUPITER": "0 Ge 09' 49.67\"",
+      "VENUS":  "12 Pi 59' 13.38\"",
+      "SATURN":  "5 Pi 39' 32.84\""
+    }
+  },
+
+  "true_pushya_2026_05_10_11_32_26_UT": {
+    "_label": "Sidereal True Pushya, May 10 2026 11:32:26 UT (South Grafton MA EDT 7:32:26)",
+    "year": 2026, "month": 5, "day": 10, "hour": 11.540555556,
+    "ayanamsa_deg": 23.0911616,
+    "ayanamsa_deg_jhora": 23.0904722,
+    "longitudes": {
+      "SUN": 26.7361217, "MOON": 303.6715666, "MERCURY": 21.8381941,
+      "VENUS": 56.6382755, "MARS": 0.5155942, "JUPITER": 87.2311105,
+      "SATURN": 347.0927229, "URANUS": 37.7203298, "NEPTUNE": 340.4529952,
+      "PLUTO": 282.4148921
+    },
+    "jhora_longitudes_dms": {
+      "SUN":    "26 Ar 44' 27.31\"",
+      "MOON":    "3 Aq 40' 21.31\"",
+      "MARS":    "0 Ar 31' 28.20\"",
+      "MERCURY":"21 Ar 51' 13.30\"",
+      "JUPITER":"27 Ge 14' 07.13\"",
+      "VENUS":  "26 Ta 38' 49.58\"",
+      "SATURN": "17 Pi 05' 52.85\""
+    }
+  }
+}

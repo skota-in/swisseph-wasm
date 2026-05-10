@@ -1,0 +1,6 @@
+node_modules/
+dist/
+wasm/astrosk.js
+wasm/astrosk.wasm
+*.log
+.DS_Store
