@@ -17,8 +17,25 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 
 if ! command -v emcc >/dev/null 2>&1; then
-  echo "ERROR: emcc not found. Activate emsdk first:" >&2
-  echo "  source /opt/emsdk/emsdk_env.sh" >&2
+  echo "ERROR: emcc not found in PATH." >&2
+  echo "" >&2
+  echo "Install Emscripten and activate it before building:" >&2
+  echo "" >&2
+  echo "  Linux/macOS:" >&2
+  echo "    git clone https://github.com/emscripten-core/emsdk.git ~/emsdk" >&2
+  echo "    cd ~/emsdk && ./emsdk install latest && ./emsdk activate latest" >&2
+  echo "    source ~/emsdk/emsdk_env.sh" >&2
+  echo "" >&2
+  echo "  Windows (Git Bash / PowerShell):" >&2
+  echo "    git clone https://github.com/emscripten-core/emsdk.git C:/emsdk" >&2
+  echo "    cd C:/emsdk" >&2
+  echo "    ./emsdk install latest" >&2
+  echo "    ./emsdk activate latest" >&2
+  echo "    # Git Bash:    source ./emsdk_env.sh" >&2
+  echo "    # PowerShell:  ./emsdk_env.ps1" >&2
+  echo "    # cmd.exe:     emsdk_env.bat" >&2
+  echo "" >&2
+  echo "After activating, re-run: pnpm build:wasm" >&2
   exit 1
 fi
 
